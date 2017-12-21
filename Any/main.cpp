@@ -6,7 +6,7 @@
 using namespace std;
 
 
-int main()
+int main() 
 { 
 	{
 		Any a(12), b(10.3);
