@@ -27,7 +27,7 @@ public:
 
 };
 
-class Bar final : public Foo // can be final class as well
+class Bar /*final*/ : public Foo // can be final class as well
 {
 public:
 	int magic() const override final { return 8; } // virtual function override

@@ -7,7 +7,7 @@ using namespace std;
 int main()
 {
 	cout << "Lokjed az inputot!" << endl;
-
+/*
 	stack<char> s;
 	//string expr = "[][]{dfsdff}(fsd[fasdf[]fsf])";
 	string expr = "[]";
@@ -16,7 +16,12 @@ int main()
 
 	for (auto c : expr)
 	{
-		if ((c == '(' && s.top() == ')') || (c == '{' &&.top() == '}') || (c == '[' && s.top() == ']'))
+		if (c == '(' || c == '{' || c == '[')
+		{
+			s.push(c);
+			//cout << "into:" << c << endl;
+		}
+		else if ((c == '(' && s.top() == ')') || (c == '{' &&.top() == '}') || (c == '[' && s.top() == ']'))
 		{
 			cout << c << endl;
 			if (c == s.top())
@@ -29,11 +34,6 @@ int main()
 				err = true;
 				break;
 			}
-		}
-		else if (c == '(' || c == '{' || c == '[')
-		{
-			s.push(c);
-			cout << "into:" << c << endl;
 		}
 	}
 
@@ -50,7 +50,7 @@ int main()
 	{
 		cout << "ok" << endl;
 	}
-
+	*/
 	system("pause");
 
 	return 0;
