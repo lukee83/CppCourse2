@@ -7,7 +7,7 @@ using namespace std;
 
 
 int main()
-{
+{ 
 	{
 		Any a(12), b(10.3);
 		a = std::string("almafa");
