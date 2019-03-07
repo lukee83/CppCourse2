@@ -15,7 +15,7 @@ void print_it(int i)
 {
 	{
 		unique_lock<mutex> lc(mux);
-		// vagy try_lock es ha nem sik, akkor alszik tovabb
+		// vagy try_lock es ha nem sikerul, akkor alszik tovabb
 
 		while (!ready) cv.wait(lc);
 		
